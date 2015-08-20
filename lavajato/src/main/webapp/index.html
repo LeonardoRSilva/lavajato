@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aprendendo Servlet</title>
+<link rel="stylesheet"
+	href="resources/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	<link rel="stylesheet"
+	href="resources/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Trabalho lavajato</h3>
+			</div>
+			<div class="panel-body">
+				<form class="form-horizontal" method="post" action="calculaServico">
+				  <div class="form-group">
+				    <label for="inputNome" class="col-sm-1 control-label" >Nome</label>
+				    <div class="col-sm-10">
+				      <input type="nome" class="form-control" name="nome" id="inputNome" placeholder="Nome">
+				    </div>
+				  </div>
+  
+
+					  <label class="radio-inline">
+					    <input type="radio" name="veiculo" id="veiculo" value="carro" checked>
+					   	Carro
+					  </label>
+
+					   <label class="radio-inline">
+					    <input type="radio" name="veiculo" id="veiculo" value="moto" checked>
+					   	Moto
+					  </label>
+					  <label class="radio-inline">
+					    <input type="radio" name="veiculo" id="veiculo" value="caminhonete" checked>
+					   	Caminhonete
+					  </label>	
+					  
+					  				
+				      <div class="checkbox">
+				        <label>
+				          <input type="checkbox" name="servicos" value="lavar"> Lavar
+				        </label>
+				      </div>
+				      <div class="checkbox">
+				        <label>
+				          <input type="checkbox" name="servicos" value="aspirar"> Aspirar
+				        </label>
+				      </div>
+				      <div class="checkbox">
+				        <label>
+				          <input type="checkbox" name="servicos" value="encerar"> Encerar
+				        </label>
+				      </div>
+
+				  <div class="form-group">
+				    <div class="col-sm-offset-1 col-sm-10">
+				      <button type="submit" class="btn btn-default">Enviar</button>
+				    </div>
+				  </div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
